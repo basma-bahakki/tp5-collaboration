@@ -1,10 +1,11 @@
 
 const invites = [
-  { id: 1, nom: "Sara El Amrani", type: "famille", statut: "confirmé" },
-  { id: 2, nom: "Youssef Benali", type: "ami", statut: "en attente" },
-  { id: 3, nom: "Pr. Nadia Alaoui", type: "enseignant", statut: "confirmé" },
-  { id: 4, nom: "Omar Idrissi", type: "ami", statut: "confirmé" },
-  { id: 5, nom: "Pr. Karim Tazi", type: "enseignant", statut: "en attente" }
+  { id: 1, nom: "Saloua L.", type: "ami", statut: "confirmé" },
+  { id: 2, nom: "Jihan D.", type: "ami", statut: "en attente" },
+  { id: 3, nom: "Pr. May A.", type: "enseignant", statut: "confirmé" },
+  { id: 4, nom: "Pr. Yassir C.", type: "enseignant", statut: "confirmé" },
+  { id: 5, nom: "Hiba A.", type: "famille", statut: "en attente" },
+  { id: 6, nom: "Ghita A.", type: "famille", statut: "confirmé" },
 ];
 
 
@@ -39,4 +40,15 @@ boutonsFiltre.forEach(bouton => {
       afficherInvites(invites.filter(invite => invite.type === type));
     }
   });
+});
+
+//hiba:adding the search:
+const champRecherche = document.querySelector("#champ-recherche");
+
+champRecherche.addEventListener("input", () => {
+  const texte = champRecherche.value.toLowerCase().trim();
+  const resultats = invites.filter(invite =>
+    invite.nom.toLowerCase().includes(texte)
+  );
+  afficherInvites(resultats);
 });
