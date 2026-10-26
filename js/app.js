@@ -25,3 +25,18 @@ function afficherInvites(tableau) {
   });
 }
 afficherInvites(invites);
+
+//hiba: adding the filter:
+
+const boutonsFiltre = document.querySelectorAll("#zone-filtre button");
+
+boutonsFiltre.forEach(bouton => {
+  bouton.addEventListener("click", () => {
+    const type = bouton.dataset.type;
+    if (type === "tous") {
+      afficherInvites(invites);
+    } else {
+      afficherInvites(invites.filter(invite => invite.type === type));
+    }
+  });
+});
