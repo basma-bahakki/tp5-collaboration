@@ -1,0 +1,19 @@
+.hero {
+  background: #1f3a5f;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+.hero .date {
+  color: #f0c869;
+  font-weight: bold;
+}
+
+.footer {
+  background: #f1f3f5;
+}

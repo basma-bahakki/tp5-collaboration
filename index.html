@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Invitation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invitation à la soutenance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+
+  <!-- ===== HERO ===== -->
+  <header class="hero text-center">
+    <p class="text-uppercase small">Vous êtes cordialement invités à la soutenance de</p>
+    <h1 id="titre">Soutenance de projet de fin d'études</h1>
+    <p class="lead">Titre du projet : Application web de gestion</p>
+    <p>Présenté par <strong>Prénom Nom</strong> et <strong>Prénom Nom</strong></p>
+    <p class="date">Mardi 15 juin 2027 · 10h00 · Marrakech</p>
+  </header>
+
+  <!-- ===== JURY ===== -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Le jury</h2>
+    <div class="row g-3" id="jury">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Pr. Nom Prénom</h5>
+          <p class="mb-0 text-muted">Président du jury</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Pr. Nom Prénom</h5>
+          <p class="mb-0 text-muted">Encadrant</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Pr. Nom Prénom</h5>
+          <p class="mb-0 text-muted">Examinateur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMME ===== -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Programme</h2>
+    <ul class="list-group">
+      <li class="list-group-item">10h00 : Accueil des invités</li>
+      <li class="list-group-item">10h15 : Présentation du projet</li>
+      <li class="list-group-item">10h45 : Questions du jury</li>
+      <li class="list-group-item">11h30 : Délibération et résultats</li>
+    </ul>
+  </section>
+
+  <!-- ===== LISTE DES INVITÉS ===== -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Liste des invités</h2>
+
+    <!-- Zone RECHERCHE (membre A) -->
+    <div id="zone-recherche"></div>
+
+    <!-- Zone FILTRE (membre B) -->
+    <div id="zone-filtre"></div>
+
+    <div id="liste-invites" class="row g-3 mt-2"></div>
+  </section>
+
+  <!-- ===== LIEU ===== -->
+  <section class="container py-5 text-center">
+    <h2 class="mb-3">Lieu</h2>
+    <p>FST Marrakech, Salle de soutenance</p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center py-4 footer">
+    <p class="mb-0">Merci de votre présence 🎓</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
