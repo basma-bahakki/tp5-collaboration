@@ -19,8 +19,8 @@ function afficherInvites(tableau) {
     col.innerHTML = `
       <div class="card p-3">
         <h5>${invite.nom}</h5>
-        <p class="mb-1">Type : ${invite.type}</p>
-        <p class="mb-0">Statut : ${invite.statut}</p>
+        <p class="mb-1" id="sub">Type : ${invite.type}</p>
+        <p class="mb-0" id="sub">Statut : ${invite.statut}</p>
       </div>`;
     liste.appendChild(col);
   });
