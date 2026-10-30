@@ -1,13 +1,15 @@
 
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 15px 0;
+  font-family: "Parisienne", cursive;
 }
 
 .hero .date {
   color: #d4af37;
   font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .footer {
