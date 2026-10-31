@@ -9,41 +9,40 @@
 </head>
 <body>
 
-  <!-- ===== HERO ===== -->
   <header class="hero text-center">
     <p class="text-uppercase small">Vous êtes cordialement invités à la soutenance de</p>
     <h1 id="titre">Soutenance de projet de fin d'études</h1>
     <p class="lead">Titre du projet : Application web de gestion</p>
-    <p>Présenté par <strong>Prénom Nom</strong> et <strong>Prénom Nom</strong></p>
+    <p>Présenté par <strong>Hiba LAMMSSELAK</strong> et <strong>Basma Bahakki</strong></p>
     <p class="date">Mardi 15 juin 2027 · 10h00 · Marrakech</p>
   </header>
 
-  <!-- ===== JURY ===== -->
+
   <section class="container py-5">
     <h2 class="text-center mb-4">Le jury</h2>
     <div class="row g-3" id="jury">
       <div class="col-md-4">
         <div class="card p-3 text-center">
-          <h5>Pr. Nom Prénom</h5>
+          <h5>Pr. Rachid Eddaoudi</h5>
           <p class="mb-0 text-muted">Président du jury</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card p-3 text-center">
-          <h5>Pr. Nom Prénom</h5>
+          <h5>Pr. Nawal Bourquia</h5>
           <p class="mb-0 text-muted">Encadrant</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card p-3 text-center">
-          <h5>Pr. Nom Prénom</h5>
+          <h5>Pr. ABDALI Abdelmounaïm</h5>
           <p class="mb-0 text-muted">Examinateur</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROGRAMME ===== -->
+ 
   <section class="container py-5">
     <h2 class="text-center mb-4">Programme</h2>
     <ul class="list-group">
@@ -54,30 +53,34 @@
     </ul>
   </section>
 
-  <!-- ===== LISTE DES INVITÉS ===== -->
+
   <section class="container py-5">
     <h2 class="text-center mb-4">Liste des invités</h2>
 
-    <!-- Zone RECHERCHE (membre A) -->
-    <div id="zone-recherche"></div>
+    <!-- Zone RECHERCHE  -->
+    <div id="zone-recherche">
+        <input type="text" id="champ-recherche" class="form-control" placeholder="...hg">
+    </div>
 
-    <!-- Zone FILTRE (membre B) -->
-    <div id="zone-filtre"></div>
-
+    <!--filter, by hiba-->
+    <div id="zone-filtre" class="mb-3">
+        <button class="btn btn-outline-primary btn-sm" data-type="tous">Tous</button>
+        <button class="btn btn-outline-primary btn-sm" data-type="famille">Famille</button>
+        <button class="btn btn-outline-primary btn-sm" data-type="ami">Amis</button>
+        <button class="btn btn-outline-primary btn-sm" data-type="enseignant">Enseignants</button>
+    </div>
     <div id="liste-invites" class="row g-3 mt-2"></div>
   </section>
 
-  <!-- ===== LIEU ===== -->
   <section class="container py-5 text-center">
     <h2 class="mb-3">Lieu</h2>
-    <p>FST Marrakech, Salle de soutenance</p>
+    <p>FST Marrakech, Salle des Conférence</p>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="text-center py-4 footer">
-    <p class="mb-0">Merci de votre présence 🎓</p>
+    <p class="mb-0">Merci de votre présence </p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="js/app.js"></script> <!--hiba: made sure that the path is correct-->
 </body>
 </html>
